@@ -99,7 +99,7 @@ a {
     background-size: cover;
     width: 100%;
     /* height: 100vh; */
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem;
 }
 
 .navbar {
@@ -166,17 +166,76 @@ a {
     border: 3px solid #462E05;
 }
 
+.materi-page {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../assets/images/image-3.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 0.5rem;
+}
+.materi-title {
+    text-align: center;
+    font-size: 3.2rem;
+    font-family: 'Oregano', cursive;
+    color: #6A4D1A;
+    text-shadow:
+        -1px -1px 0 #FFFFFF,  
+        1px -1px 0 #FFFFFF,
+        -1px 1px 0 #FFFFFF,
+        1px 1px 0 #FFFFFF;
+    margin-top: 50px;
+}
+.materi-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    justify-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+.materi-list-box {
+    width: 280px;
+    height: 180px;
+    background-color: #6A4D1A;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.materi-list-box-inner {
+    width: 250px;
+    height: 150px;
+    background-color: #E2BA74;
+    border-radius: 10px;
+    border: 4px solid #462E05;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.materi-list-title {
+    font-family: 'Oregano', cursive;
+    font-size: 1.5rem;
+    color: #462E05;
+}
+.materi-list-aksara {
+    font-family: 'Sundanese Unicode';
+    font-size: 1.5rem;
+    color: #462E05;
+}
+
 @media screen and (max-width: 1000px) {
     .video-page {
         height: 100vh;
     }
-
-    .homepage {
-        height: 100%;
-    }
+    
 }
 
 @media screen and (max-width: 768px) {
+    .homepage, .materi-page {
+        height: 100%;
+    }
     .line1 {
         width: 35px;
         height: 5px;
