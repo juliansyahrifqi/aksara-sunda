@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap');
+
+@font-face {
+    font-family: 'Sundanese Unicode';
+    src: url("/assets/font/SundaneseUnicode-2.0.ttf") format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.homepage {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../assets/images/image-1.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+}
+
+.homepage-title {
+    font-family: 'Oregano', cursive;
+    color: #6A4D1A;
+    font-size: 5rem;
+    text-align: center;
+    text-shadow:
+        -1px -1px 0 #FFFFFF,  
+        1px -1px 0 #FFFFFF,
+        -1px 1px 0 #FFFFFF,
+        1px 1px 0 #FFFFFF;
+}
+
+.homepage-sundanese {
+    font-family: 'Sundanese Unicode';
+    text-align: center;
+    font-size: 2.5rem;
+    color: #6A4D1A;
+    text-shadow:
+        -1px -1px 0 #FFFFFF,  
+        1px -1px 0 #FFFFFF,
+        -1px 1px 0 #FFFFFF,
+        1px 1px 0 #FFFFFF;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 190px;
+    height: 190px;
+    background-color: #6A4D1A;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.inner-box {
+    width: 160px;
+    height: 160px;
+    background-color: #E2BA74;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #462E05;
+}
+
+.box-title {
+    font-family: 'Oregano', cursive;
+    color: #6A4D1A;
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow:
+        -1px -1px 0 #FFFFFF,  
+        1px -1px 0 #FFFFFF,
+        -1px 1px 0 #FFFFFF,
+        1px 1px 0 #FFFFFF;
+    margin-top: 1rem;
+}
+
+.video-page {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../assets/images/image-2.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    /* height: 100vh; */
+    padding: 0.5rem 0.5rem;
+}
+
+.navbar {
+    height: 8vh;
+    background-color: #E2BA74;
+    border-radius: 5px;
+    border: 3px solid #462E05;
+    font-family: 'Oregano', cursive;
+    z-index: 5;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    height: 100%;
+}
+
+.navbar-menu li a{
+    margin: 50px;
+    text-decoration: none;
+    color: #6A4D1A;
+    font-size: 1.5rem;
+    font-family: 'Oregano', cursive;
+}
+
+.navbar-menu li .active{
+    color: #FFFFFF;
+}
+
+.video {
+    margin-top: 40px;
+}
+
+.video-title {
+    text-align: center;
+    font-size: 3.2rem;
+    font-family: 'Oregano', cursive;
+    color: #6A4D1A;
+    text-shadow:
+        -1px -1px 0 #FFFFFF,  
+        1px -1px 0 #FFFFFF,
+        -1px 1px 0 #FFFFFF,
+        1px 1px 0 #FFFFFF;
+    margin-top: 1rem;
+}
+
+.video-player-box {
+    width: 80%;
+    background-color: #E2BA74;
+    border: 3px solid #462E05;
+    margin: 0 auto;
+    padding: 1.2rem;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.video-player {
+    z-index: 1;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #E2BA74;
+    border: 3px solid #462E05;
+}
+
+@media screen and (max-width: 1000px) {
+    .video-page {
+        height: 100vh;
+    }
+
+    .homepage {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .line1 {
+        width: 35px;
+        height: 5px;
+    }
+
+    .line2 {
+        width: 35px;
+        height: 5px;
+    }
+    
+    .line3 {
+        width: 35px;
+        height: 5px;
+    }
+
+    .line1, .line2, .line3 {
+        background: white;
+        margin: 7px;
+    }
+    
+
+    .navbar {
+        position: relative;
+    }
+
+    .mobile-menu {
+        z-index: 999;
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        cursor: pointer;
+    }
+
+    .navbar-menu {
+        background-color: #E2BA74;
+        outline: 5px solid #462E05;
+        height: 70vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        clip-path: inset(0 0 100% 100% round 0 0 0 25%);
+        -webkit-clip-path: inset(0 0 100% 100% round 0 0 0 25%);
+        transition:all 0.8s ease-in;
+    }
+
+    .navbar-menu li a{
+        font-size: 22px;
+    }
+
+    .navbar-menu.show {
+        clip-path: inset(0 0 100% 100% round 0 0 0 25%);
+        -webkit-clip-path: inset(0 0 0 0 round 0 0 0 25%);
+    }
+}
