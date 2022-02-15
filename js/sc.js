@@ -17,7 +17,8 @@ start_btn.onclick = () => {
 
 // if exitQuiz button clicked
 exit_btn.onclick = () => {
-  info_box.classList.remove("activeInfo"); //hide info box
+  // info_box.classList.remove("activeInfo"); //hide info box
+  window.location.href = "/"; // return to homepage
 };
 
 // if continueQuiz button clicked
@@ -62,7 +63,8 @@ restart_quiz.onclick = () => {
 
 // if quitQuiz button clicked
 quit_quiz.onclick = () => {
-  window.location.reload(); //reload the current window
+  // window.location.reload(); //reload the current window
+  window.location.href = "/"; // return to homepage
 };
 
 const next_btn = document.querySelector("footer .next_btn");
