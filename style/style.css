@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 @font-face {
     font-family: 'Sundanese Unicode';
@@ -225,11 +226,187 @@ a {
     color: #462E05;
 }
 
+.aksara-swara-page {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../assets/images/image-4.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 0.5rem;
+}
+.aksara-swara-title {
+    text-align: center;
+    font-size: 3.2rem;
+    font-family: 'Oregano', cursive;
+    color: #6A4D1A;
+    text-shadow:
+        -1px -1px 0 #FFFFFF,  
+        1px -1px 0 #FFFFFF,
+        -1px 1px 0 #FFFFFF,
+        1px 1px 0 #FFFFFF;
+    margin-top: 1rem;
+}
+.aksara-swara-container {
+    width: 90%;
+    background-color: #6A4D1A;
+    margin: 2rem auto;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: #462E05;
+}
+.aksara-swara-inner {
+    width: 100%;
+    background-color: #E2BA74;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid #462E05;
+}
+.aksara-swara-penjelasan {
+    text-align: center;
+    margin-top: 1rem;
+}
+.aksara-swara-aturan {
+    padding: 0 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.aksara-swara-aturan li {
+    margin-top: 0.5rem;
+}
+
+
+/* Example */
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  width: 25%;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 @media screen and (max-width: 1000px) {
     .video-page {
         height: 100vh;
     }
-    
 }
 
 @media screen and (max-width: 768px) {
@@ -250,17 +427,13 @@ a {
         width: 35px;
         height: 5px;
     }
-
     .line1, .line2, .line3 {
         background: white;
         margin: 7px;
     }
-    
-
     .navbar {
         position: relative;
     }
-
     .mobile-menu {
         z-index: 999;
         position: absolute;
@@ -268,7 +441,6 @@ a {
         top: 5%;
         cursor: pointer;
     }
-
     .navbar-menu {
         background-color: #E2BA74;
         outline: 5px solid #462E05;
@@ -280,13 +452,14 @@ a {
         -webkit-clip-path: inset(0 0 100% 100% round 0 0 0 25%);
         transition:all 0.8s ease-in;
     }
-
     .navbar-menu li a{
         font-size: 22px;
     }
-
     .navbar-menu.show {
         clip-path: inset(0 0 100% 100% round 0 0 0 25%);
         -webkit-clip-path: inset(0 0 0 0 round 0 0 0 25%);
+    }
+    .aksara-swara-container {
+        width: 100%;
     }
 }
