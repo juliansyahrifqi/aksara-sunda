@@ -69,6 +69,12 @@ a {
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    transition: transform 0.5s;
+    
+}
+
+.box:hover {
+    transform: scale(1.2);
 }
 
 .inner-box {
@@ -202,6 +208,10 @@ a {
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    transition: transform 0.5s;
+}
+.materi-list-box:hover {
+    transform: scale(1.1);
 }
 .materi-list-box-inner {
     width: 250px;

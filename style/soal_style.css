@@ -13,9 +13,9 @@
     font-family: 'Sundanese Unicode', sans-serif;
 }
 
-
 body{
-    background: #007bff;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../assets/images/image-2.jpg") no-repeat center;
+    height: 100vh;
 }
 
 ::selection{
