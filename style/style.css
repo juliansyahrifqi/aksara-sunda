@@ -243,7 +243,6 @@ a {
 .image-rarangken-page {
     background-size: cover;
     width: 100%;
-    height: 100vh;
     padding: 0.5rem;
 }
 .aksara-materi-title {
@@ -295,14 +294,42 @@ a {
 /* Example */
 .row {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    margin-top: 25px;
+    padding: 0 3.8rem;
 }
 
 /* Create four equal columns that floats next to eachother */
 .column {
   width: 25%;
   text-align: center;
+  margin-top: 20px;
+}
+
+.column img {
+    border: 1px solid #E2BA74;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .row {
+        padding: 0;
+    }
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 /* The Modal (background) */
