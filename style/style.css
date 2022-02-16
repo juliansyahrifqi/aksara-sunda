@@ -225,15 +225,28 @@ a {
     font-size: 1.5rem;
     color: #462E05;
 }
-
 .aksara-swara-page {
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../assets/images/image-4.jpg") no-repeat center;
+}
+.aksara-ngalagena-page {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../assets/images/image-5.jpg") no-repeat center;
+}
+.aksara-wilangan-page {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../assets/images/image-6.jpg") no-repeat center;
+}
+.aksara-rarangken-page {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../assets/images/image-7.jpg") no-repeat center;
+}
+.aksara-swara-page, 
+.aksara-ngalagena-page,
+.aksara-wilangan-page, 
+.image-rarangken-page {
     background-size: cover;
     width: 100%;
     height: 100vh;
     padding: 0.5rem;
 }
-.aksara-swara-title {
+.aksara-materi-title {
     text-align: center;
     font-size: 3.2rem;
     font-family: 'Oregano', cursive;
@@ -245,7 +258,7 @@ a {
         1px 1px 0 #FFFFFF;
     margin-top: 1rem;
 }
-.aksara-swara-container {
+.aksara-materi-container {
     width: 90%;
     background-color: #6A4D1A;
     margin: 2rem auto;
@@ -258,23 +271,23 @@ a {
     font-family: 'Poppins', sans-serif;
     color: #462E05;
 }
-.aksara-swara-inner {
+.aksara-materi-inner {
     width: 100%;
     background-color: #E2BA74;
     padding: 1rem;
     border-radius: 10px;
     border: 5px solid #462E05;
 }
-.aksara-swara-penjelasan {
+.aksara-materi-penjelasan {
     text-align: center;
     margin-top: 1rem;
 }
-.aksara-swara-aturan {
+.aksara-materi-aturan {
     padding: 0 2rem;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
 }
-.aksara-swara-aturan li {
+.aksara-materi-aturan li {
     margin-top: 0.5rem;
 }
 
